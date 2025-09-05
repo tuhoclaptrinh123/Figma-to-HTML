@@ -10,4 +10,108 @@ html {
 /* Khôi phục lại cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================common: chung==================== */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0px 16px; /*16px là có ngụ ý*/
+  /* xem lại kiến thức Block - inline, inline-block bài 51, có nói kỹ về nút bấm */
+
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
+
+  /* code chiều cao nút bấm */
+  line-height: 50px;
+  /* code độ rộng */
+  min-width: 118px;
+}
+
+.main-content {
+  width: 1170px;
+  /* chú ý */
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===============header============================================ */
+.header {
+  background-color: #a2e456e7;
+}
+
+.header .body-header {
+  display: flex;
+  /* căn các item nằm ngang ra */
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+/* chú ý */
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  /* font-size là 16px vẫn giống 1.6rem vì mình đã quy đổi lại trang web ngay từ đầu */
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+/* lưu ý */
+.nav li.active a,
+/* --- làm cho home đậm đen lên*/
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  /* thay font-weight bằng text-shadow => không giật text*/
+  text-shadow: 1px 0 0 currentColor;
+}
+
+/* thêm dấu gạch_bài 83, before_after*/
+.nav li.active a::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  /* với trạng thái display là inline thì phần tử không xét được width, height => cần thêm display_block 0r inline-block */
+  border-radius: 1px;
+  background: #171100;
+
+  /* dùng position: absolute thì quay lại bài 87.2; ==> tác động vào thẻ a có position: relative; thì */
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+}
+
+/* tác động độ rộng nhỏ nhất cho nút Sign Up */
+header .btn-sign-up {
+  min-width: 144px;
+}
+
+/* xử lý dùng sticky-hiệu ứng bám dính- để neo header lại khi cuộn trang xuống cần quay lại body-header trong header*/
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+/* code khoảng cách giữa Reviews và Sign Up */
+.header .action {
+  margin-left: 49px;
 }
