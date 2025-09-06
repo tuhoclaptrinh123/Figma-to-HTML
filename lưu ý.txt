@@ -1,16 +1,10 @@
-2:46 kiểm tra font
-3:13 nhúng font
-7:26 code header
-10:20 xuất ảnh
-10:38 tắt view
-12:01 thêm sự khác nhau nút bấm
-12:27 thêm height body
-15:44 đo chiều rộng web
-19:23 bỏ font ko cần thiết
-22:30 dùng padding cho ấn dễ
-23:30 text -shadow 
-24:30 chen dau duoi home
-26:13 tao inlne-block
-26:34 hien cach home
-29:51 coppy nen
-35:10 tao sticky
+lưu ý: code giao diện với quan sát là từ tổng quan đến chi tiết, từ trái qua phải,
+từ trên xuống dưới
+
+nếu phân màn hình web ra 2 phần thì: quy trình code đúng là:
++ phần 1: từ tổng quan đến chi tiết, từ trái qua phải,
+từ trên xuống dưới
++ phần 2: từ trái qua phải, từ trên xuống dưới,
+từ tổng quan đến chi tiết
+
+? phải hỏi: dùng kết hợp thẻ, như thế nào là an toàn
