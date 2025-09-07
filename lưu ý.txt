@@ -1,10 +1,2 @@
-lưu ý: code giao diện với quan sát là từ tổng quan đến chi tiết, từ trái qua phải,
-từ trên xuống dưới
-
-nếu phân màn hình web ra 2 phần thì: quy trình code đúng là:
-+ phần 1: từ tổng quan đến chi tiết, từ trái qua phải,
-từ trên xuống dưới
-+ phần 2: từ trái qua phải, từ trên xuống dưới,
-từ tổng quan đến chi tiết
-
-? phải hỏi: dùng kết hợp thẻ, như thế nào là an toàn
+. dùng trực tiếp file SVG thì trình duyệt vẫn hiểu được_cụ thể phần buttom trong 
+popular top
