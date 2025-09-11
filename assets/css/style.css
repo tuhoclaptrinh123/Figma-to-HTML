@@ -522,9 +522,20 @@ header .btn-sign-up {
   padding: 96px 0;
   background-color: #2e2100;
 }
+
+.feedback-list {
+  display: flex;
+
+  overflow: hidden;
+}
+
 .feedback-item {
+  width: 100%;
+  /* nhớ thêm width: 100% nghe */
   display: flex;
   /* justify-content: space-between; */
+
+  flex-shrink: 0;
 }
 .feedback .avatar {
   width: 72px;
