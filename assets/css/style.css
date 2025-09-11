@@ -590,12 +590,12 @@ header .btn-sign-up {
   line-height: 1.54;
 }
 
-/* =====================================features======================================= */
+/* =====================================features-1======================================= */
 .features {
   margin-top: 135px;
   /* để nền không chèn thì tính padding */
   padding: 65px 0;
-  /* background-color: lightcoral; */
+  background-color: lightcoral;
 }
 .features .body {
   display: flex;
@@ -636,4 +636,20 @@ header .btn-sign-up {
   height: 50px;
   background-color: var(--primary-color);
   margin-top: 32px;
+}
+/* =====================================features-2======================================= */
+.features-2nd {
+  margin-top: 70px;
+}
+.features-2nd .body {
+  flex-direction: row-reverse;
+}
+.features-2nd .content {
+  width: 49%; /* 570px : 1170px */
+}
+
+.features-2nd .images img {
+  width: 470px;
+  height: 440px;
+  /* flex-shrink: 0; */
 }
