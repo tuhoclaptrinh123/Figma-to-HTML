@@ -513,3 +513,68 @@ header .btn-sign-up {
 }
 /* tối ưu hóa popular */
 /* tác động flex vào 3 course-item -> quay lên .course-item */
+
+/* =========================================feedback============================================================ */
+/* tránh trường hợp khi người dùng thêm nền vào thì nền dính sát chữ => padding trên dưới là 65px. Trường hợp này mình đã code trong phần popular */
+.feedback {
+  margin-top: 135px;
+  /* khối này có nền */
+  padding: 96px 0;
+  background-color: #2e2100;
+}
+.feedback-item {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.feedback .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%; /*hình tròn*/
+  object-fit: cover;
+}
+.feedback-item .info .member-name {
+  margin-top: 18px;
+
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.feedback-item .dots {
+  display: flex;
+  margin-top: 28px;
+  /* khoảng cách giữa 3 cái chấm */
+  gap: 6px;
+}
+.feedback-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+
+  cursor: pointer;
+}
+.feedback-item .dot.active {
+  background-color: var(--primary-color);
+
+  cursor: default;
+}
+
+.feedback-item .content {
+  width: 66%; /*772px : 1170px*/
+  margin-left: auto;
+  /* hoặc justify-content ở .feedback-item */
+}
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
+}
