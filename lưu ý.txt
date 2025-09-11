@@ -1,2 +1,0 @@
-. dùng trực tiếp file SVG thì trình duyệt vẫn hiểu được_cụ thể phần buttom trong 
-popular top

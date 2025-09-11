@@ -67,6 +67,21 @@ a {
   /* 1.27*3.8rem=4.826rem=48___26px theo video:48px */
   letter-spacing: -0.76px;
 }
+/* tối ưu hóa item */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  /* line-clamp: var(--line-clamp, 1); */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+/* xuống dòng chữ dài */
+.break-all {
+  word-break: break-all;
+}
 
 /* ===============header============================================ */
 .header {
@@ -418,6 +433,9 @@ header .btn-sign-up {
   border-radius: 12px;
   background-color: #fff;
   border: 1px solid #e2dfde;
+
+  flex: 1;
+  /* trọng số của 3 item đều bằng 1 -> đều bằng nhau */
 }
 /* khi chúng ta click vào item trên thì chúng ta làm gì với nó, bên dưới */
 .popular .course-item:hover {
@@ -493,3 +511,5 @@ header .btn-sign-up {
   /* cursor: pointer; */
   /* thêm lên common */
 }
+/* tối ưu hóa popular */
+/* tác động flex vào 3 course-item -> quay lên .course-item */
